@@ -28,5 +28,8 @@ function walkHome(dogName, dogBreed) {
   return string;
 }
 
-console.log("Walk home with Byron the poodle");
-console.log("Unleash Byron the poodle");
+function unleaseDog(dogName, dogBreed) {
+  let string = `Unleash ${dogName} the ${dogBreed}`;
+  console.log(string);
+  return string;
+}
