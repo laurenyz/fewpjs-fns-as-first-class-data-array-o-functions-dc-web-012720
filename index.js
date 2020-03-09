@@ -37,7 +37,11 @@ function unleashDog(dogName, dogBreed) {
 let routine = [wakeDog, leashDog, walkToPark, throwFrisbee, walkHome, unleashDog]
 
 function exerciseDog(dogName, dogBreed) {
+  let arr = []
   for (i = 0, i < routine.length, i ++) {
-    
+    let phrase = routine[i](dogName, dogBreed)
+    console.log(phrase)
+    arr.push(phrase)
   }
+  return arr
 }
